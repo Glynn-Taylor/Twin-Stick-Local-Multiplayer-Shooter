@@ -52,6 +52,7 @@ public class PlayerWeapon : MonoBehaviour {
 		_gunAudio = GetComponent<AudioSource> ();
 		_gunLight = GetComponent<Light> ();
 		_EquippedWeapon = DefaultWeapon;
+		_gunAudio.clip = _EquippedWeapon.FireClip;
 	}
 	
 	void Update() {
@@ -82,6 +83,7 @@ public class PlayerWeapon : MonoBehaviour {
 		
 		// Play the gun shot audioclip.
 		_gunAudio.pitch = Random.Range(1.2f, 1.3f);
+
 		_gunAudio.Play ();
 		
 		// Enable the light.
