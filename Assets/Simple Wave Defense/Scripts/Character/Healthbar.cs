@@ -12,11 +12,7 @@ public class Healthbar : MonoBehaviour {
 	}
 
 	void Update() {
-		if (Target == null) {
-			return;
-		}
 
-		Vector3 screenPos = Camera.main.WorldToScreenPoint(Target.transform.position+_Offset);
-		gameObject.transform.position = screenPos;
+		gameObject.transform.position = Camera.main.WorldToScreenPoint(Target.transform.position+_Offset);
 	}
 }

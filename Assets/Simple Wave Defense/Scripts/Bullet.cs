@@ -47,12 +47,10 @@ public class Bullet : MonoBehaviour {
 			bounceTrailParticles.gameObject.SetActive(true);
 			normalTrailParticles.gameObject.SetActive(false);
 			life = 1;
-			speed = 20;
 		}
 		if (piercing) {
 			pierceTrailParticles.gameObject.SetActive(true);
 			normalTrailParticles.gameObject.SetActive(false);
-			speed = 40;
 		}
 	}
 

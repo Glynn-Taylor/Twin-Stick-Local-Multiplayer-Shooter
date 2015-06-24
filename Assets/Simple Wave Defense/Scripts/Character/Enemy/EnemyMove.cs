@@ -21,7 +21,7 @@ public class EnemyMove : MonoBehaviour {
 	// Reference to the animator.
 	Animator _Animation;
 	float _CheckPlayerClosestTimer;
-	const float CHECK_PLAYER_CLOSEST_TIME=1f;
+	const float CHECK_PLAYER_CLOSEST_TIME=1.5f;
 
 	void Awake(){
 		_Target = GameObject.FindGameObjectWithTag ("Player").transform;
@@ -42,8 +42,7 @@ public class EnemyMove : MonoBehaviour {
 			CheckClosestPlayer();
 			if(_Target)
 				_Navigation.SetDestination(_Target.position);
-			float currentSpeed = _Navigation.velocity.magnitude;
-			_Animation.speed = currentSpeed;
+			_Animation.speed = _Navigation.velocity.magnitude;
 			
 		}
 	}
@@ -60,6 +59,8 @@ public class EnemyMove : MonoBehaviour {
 	Transform FindClosestLivingPlayer ()
 	{
 		GameObject[] Players = GameObject.FindGameObjectsWithTag("Player");
+		if (Players.Length == 0)
+			return null;
 		int bestIndex=0;
 		float bestDistance=999;
 		for (int i=0; i<Players.Length; i++) {

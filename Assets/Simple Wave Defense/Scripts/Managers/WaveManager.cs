@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class WaveManager : MonoBehaviour {
-
+	private const float MIN_ENEMIES_INCREMENT = 0.4f;
 	[Range(1,3)]
 	public float Difficulty=1;
 	public float TimeBetweenWaves=20;
@@ -15,6 +15,7 @@ public class WaveManager : MonoBehaviour {
 	private float _waveTimer=0;
 	private int _WaveNumber=0;
 	private Transform[] _SpawnPoints;	
+	private float _minEnemies=0;
 
 	[System.Serializable]
 	public class Wave {
@@ -43,13 +44,15 @@ public class WaveManager : MonoBehaviour {
 		_waveTimer += Time.deltaTime;
         
         // If the timer exceeds the time between attacks, the player is in range and this enemy is alive attack.
-		if (_waveTimer >= TimeBetweenWaves || _enemiesAlive==0) {
-			Wave currentWave = Waves[_WaveNumber];
+		if (_waveTimer >= TimeBetweenWaves || _enemiesAlive<=(int)_minEnemies) {
+			Wave currentWave = Waves[_WaveNumber>=Waves.Length?Waves.Length-1:_WaveNumber];
 			// Spawn one enemy from each of the entries in this wave.
 			foreach (Wave.Entry entry in currentWave.Entries) {
 				Spawn(entry);
 			}
 			_waveTimer=0;
+			_WaveNumber++;
+			_minEnemies+=MIN_ENEMIES_INCREMENT;
 		}
 	}
 
