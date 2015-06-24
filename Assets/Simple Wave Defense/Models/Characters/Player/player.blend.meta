@@ -1,0 +1,245 @@
+fileFormatVersion: 2
+guid: c7a73a22ef161804087a5a7a10788290
+timeCreated: 1435002268
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: arm_l
+    100002: arm_l_001
+    100004: arm_r
+    100006: arm_r_001
+    100008: Armature
+    100010: chest
+    100012: Cube
+    100014: foot_l
+    100016: foot_r
+    100018: hand_l
+    100020: hand_r
+    100022: head
+    100024: hip
+    100026: leg_lower_l
+    100028: leg_lower_r
+    100030: leg_upper_l
+    100032: leg_upper_r
+    100034: neck
+    100036: //RootNode
+    100038: shoulder_l
+    100040: shoulder_r
+    400000: arm_l
+    400002: arm_l_001
+    400004: arm_r
+    400006: arm_r_001
+    400008: Armature
+    400010: chest
+    400012: Cube
+    400014: foot_l
+    400016: foot_r
+    400018: hand_l
+    400020: hand_r
+    400022: head
+    400024: hip
+    400026: leg_lower_l
+    400028: leg_lower_r
+    400030: leg_upper_l
+    400032: leg_upper_r
+    400034: neck
+    400036: //RootNode
+    400038: shoulder_l
+    400040: shoulder_r
+    4300000: Cube
+    7400000: Default Take
+    7400002: walk
+    7400004: GunCarry
+    9500000: //RootNode
+    13700000: Cube
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: walk
+      takeName: walk
+      firstFrame: 0
+      lastFrame: 79
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/foot_l
+        weight: 1
+      - path: Armature/foot_r
+        weight: 1
+      - path: Armature/hip
+        weight: 0
+      - path: Armature/hip/chest
+        weight: 0
+      - path: Armature/hip/chest/neck
+        weight: 0
+      - path: Armature/hip/chest/neck/head
+        weight: 0
+      - path: Armature/hip/chest/shoulder_l
+        weight: 0
+      - path: Armature/hip/chest/shoulder_l/arm_l
+        weight: 0
+      - path: Armature/hip/chest/shoulder_l/arm_l/arm_l_001
+        weight: 0
+      - path: Armature/hip/chest/shoulder_l/arm_l/arm_l_001/hand_l
+        weight: 0
+      - path: Armature/hip/chest/shoulder_r
+        weight: 0
+      - path: Armature/hip/chest/shoulder_r/arm_r
+        weight: 0
+      - path: Armature/hip/chest/shoulder_r/arm_r/arm_r_001
+        weight: 0
+      - path: Armature/hip/chest/shoulder_r/arm_r/arm_r_001/hand_r
+        weight: 0
+      - path: Armature/leg_lower_l
+        weight: 1
+      - path: Armature/leg_lower_r
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: GunCarry
+      takeName: GunCarry
+      firstFrame: 0
+      lastFrame: 79
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/foot_l
+        weight: 0
+      - path: Armature/foot_r
+        weight: 0
+      - path: Armature/hip
+        weight: 1
+      - path: Armature/hip/chest
+        weight: 1
+      - path: Armature/hip/chest/neck
+        weight: 1
+      - path: Armature/hip/chest/neck/head
+        weight: 1
+      - path: Armature/hip/chest/shoulder_l
+        weight: 1
+      - path: Armature/hip/chest/shoulder_l/arm_l
+        weight: 1
+      - path: Armature/hip/chest/shoulder_l/arm_l/arm_l_001
+        weight: 1
+      - path: Armature/hip/chest/shoulder_l/arm_l/arm_l_001/hand_l
+        weight: 1
+      - path: Armature/hip/chest/shoulder_r
+        weight: 1
+      - path: Armature/hip/chest/shoulder_r/arm_r
+        weight: 1
+      - path: Armature/hip/chest/shoulder_r/arm_r/arm_r_001
+        weight: 1
+      - path: Armature/hip/chest/shoulder_r/arm_r/arm_r_001/hand_r
+        weight: 1
+      - path: Armature/leg_lower_l
+        weight: 0
+      - path: Armature/leg_lower_r
+        weight: 0
+      - path: Cube
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .200000003
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: Armature
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
